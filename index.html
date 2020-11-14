@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Project</title>
+  </head>
+  <body>
+    <div class="atmcard">
+      <div class="atmcardtop">
+        <p class="part1">xxxx</p>
+        <p class="part2">xxxx</p>
+        <p class="part3">xxxx</p>
+        <p class="part4">xxxx</p>
+      </div>
+      <div class="atmcardbottom">
+        <p class="cardholdername"></p>
+        <div class="expdate">
+          <p class="expmonth"></p>
+          <p>/</p>
+          <p class="expyear"></p>
+        </div>
+      </div>
+    </div>
+    <form action="javascript:void(0);">
+      <div class="formelements">
+        <label for="">Card Number</label><br />
+        <input type="text" id="cnumber" name="" /><br />
+        <label for="">Card Holder Name</label><br />
+        <input type="text" id="cname" name="" /><br /><br />
+
+        <div class="expiryandcvv">
+          <div class="expiry">
+            <label for="">Expires</label><br />
+            <select name="" id="month">
+              <option disabled selected value>----</option>
+            </select>
+            <select name="" id="year">
+              <option disabled selected value>----</option>
+            </select>
+          </div>
+          <div class="cvv">
+            <label for="">CVV</label><br />
+            <input type="number" id="cvvno" />
+          </div>
+        </div>
+      </div>
+
+      <input type="submit" value="Submit" id="submitbutton" />
+    </form>
+    <script src="function.js"></script>
+  </body>
+</html>
